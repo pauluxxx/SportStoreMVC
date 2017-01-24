@@ -37,7 +37,7 @@ namespace SportsStore.WebUI.Controllers
                     image.InputStream.Read(product.ImageData,0,image.ContentLength);
                 }
                 rep.SaveProduct(product);
-                TempData["message"] = string.Format("Product :{0} is changed",product.Name);
+                TempData["message"] = string.Format("Product : {0} is changed",product.Name);
                 return RedirectToAction("Index");
             }
             else
